@@ -1,6 +1,14 @@
 {
-  "type": "sqlite",
-  "database": "../sqLite/sqlite.db",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "postgres",
+  "schema": "generador",
+  "extra": {
+    "SSL": "true"
+  },
   "synchronize": false,
   "migrationsRun": true,
   "logging": true,
