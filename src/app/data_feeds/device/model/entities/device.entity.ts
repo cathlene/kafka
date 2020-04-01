@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, JoinColumn, OneToOne } from 'typeorm';
 import { DeviceCategory } from '../../../deviceCategory/model/entities/device_category.entity';
 
-@Entity()
+@Entity('DEVICE')
 export class Device {
   @PrimaryGeneratedColumn()
   id_device: number;

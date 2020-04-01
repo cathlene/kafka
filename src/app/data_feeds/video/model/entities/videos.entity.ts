@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToOne, JoinColumn, ManyToOne } from 'typeorm';
 import { Campaign } from '../../../campaign/model/entities/campaign.entity';
 
-@Entity()
+@Entity('VIDEO')
 export class Video {
   @PrimaryGeneratedColumn()
   id_video: number;

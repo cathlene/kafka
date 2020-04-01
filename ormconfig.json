@@ -1,11 +1,10 @@
 {
   "type": "postgres",
-  "host": "localhost",
+  "host": "52.137.38.126",
   "port": 5432,
   "username": "postgres",
-  "password": "postgres",
   "database": "postgres",
-  "schema": "generador",
+  "schema": "DENORM",
   "extra": {
     "SSL": "true"
   },

@@ -1,19 +1,25 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToOne, JoinColumn } from 'typeorm';
 import { Country } from '../../../country/model/entities/country.entity';
 
-@Entity()
-export class Location {
+@Entity('END_USER')
+export class EndUser {
   @PrimaryGeneratedColumn()
-  id_location: number;
+  id_user: number;
 
   @Column()
-  location_name: string;
+  user_name: string;
 
   @Column()
-  latitude: number;
+  email: string;
 
   @Column()
-  longitude: number;
+  gender: string;
+
+  @Column()
+  birth_date: Date;
+
+  @Column()
+  phone_number: string;
 
   @OneToOne(
     type => Country,

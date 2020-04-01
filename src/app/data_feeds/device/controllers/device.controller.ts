@@ -2,7 +2,7 @@ import { Controller, Get, Body, BadRequestException, Query, ValidationPipe, Para
 import { Device } from '../model/entities/device.entity';
 import { DeviceService } from '../services/device.service';
 
-@Controller('devices')
+@Controller('device')
 export class DeviceController {
   constructor(private readonly deviceService: DeviceService) {}
 
